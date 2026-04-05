@@ -94,7 +94,7 @@ The neural network learns a mapping:
 - Beamforming weights  
 - Power allocation values  
 
-👉 Instead of solving optimization equations each time, the model directly predicts optimal configurations.
+->Instead of solving optimization equations each time, the model directly predicts optimal configurations.
 
 ---
 
@@ -122,7 +122,7 @@ Where:
 \text{SNR} = \frac{|\mathbf{h}^H \mathbf{w}|^2}{\sigma^2}
 \]
 
-👉 Goal: Maximize signal strength relative to noise.
+-> Goal: Maximize signal strength relative to noise.
 
 ---
 
@@ -132,7 +132,7 @@ Where:
 ||\mathbf{w}||^2 \leq P
 \]
 
-👉 Ensures total transmit power is limited.
+-> Ensures total transmit power is limited.
 
 ---
 
@@ -148,7 +148,7 @@ subject to:
 ||\mathbf{w}||^2 \leq P
 \]
 
-👉 Traditional methods solve this repeatedly (computationally expensive).
+-> Traditional methods solve this repeatedly (computationally expensive).
 
 ---
 
@@ -163,7 +163,7 @@ Where:
 - Input: Channel information  
 - Output: Optimal beamforming weights  
 
-👉 Model learns mapping instead of solving optimization each time.
+-> Model learns mapping instead of solving optimization each time.
 
 ---
 
@@ -202,16 +202,7 @@ Model performance is evaluated using:
 
 ---
 
-## 10. Applications
-
-1. 5G / 6G wireless communication systems  
-2. Massive MIMO systems  
-3. Smart antenna systems  
-4. Wireless resource allocation  
-
----
-
-## 11. Future Work
+## 10. Future Work
 
 1. Extend to MIMO systems  
 2. Use reinforcement learning for adaptive optimization  
