@@ -121,64 +121,48 @@ The neural network learns a mapping:
 
 The received signal is:
 
-\[
-y = \mathbf{h}^H \mathbf{w} x + n
-\]
+y = hᴴ w x + n
 
 Where:
-- \( \mathbf{h} \): Channel vector  
-- \( \mathbf{w} \): Beamforming weights  
-- \( x \): Transmitted signal  
-- \( n \): Noise  
+- h : Channel vector  
+- w : Beamforming weights  
+- x : Transmitted signal  
+- n : Noise  
 
 ---
 
 ### 5.2 Signal-to-Noise Ratio (SNR)
 
-\[
-\text{SNR} = \frac{|\mathbf{h}^H \mathbf{w}|^2}{\sigma^2}
-\]
+SNR = |hᴴ w|² / σ²
 
--> Goal: Maximize signal strength relative to noise.
+→ Goal: Maximize signal strength relative to noise
 
 ---
 
 ### 5.3 Power Constraint
 
-\[
-||\mathbf{w}||^2 \leq P
-\]
+||w||² ≤ P
 
--> Ensures total transmit power is limited.
+→ Ensures total transmit power is limited
 
 ---
 
 ### 5.4 Optimization Problem
 
-\[
-\max_{\mathbf{w}} \; |\mathbf{h}^H \mathbf{w}|^2
-\]
+Maximize: |hᴴ w|²  
+Subject to: ||w||² ≤ P  
 
-subject to:
-
-\[
-||\mathbf{w}||^2 \leq P
-\]
-
--> Traditional methods solve this repeatedly (computationally expensive).
+→ Traditional methods solve this optimization repeatedly
 
 ---
 
 ### 5.5 Deep Learning Approach
 
-\[
-\mathbf{w} = f_\theta(\mathbf{h})
-\]
+w = f(h)
 
 Where:
-- \( f_\theta \): Neural network  
-- Input: Channel information  
-- Output: Optimal beamforming weights  
+- Input: Channel h  
+- Output: Beamforming weights w  
 
 -> Model learns mapping instead of solving optimization each time.
 
