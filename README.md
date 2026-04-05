@@ -61,18 +61,17 @@ Goals:
 The Water-Filling Algorithm is a power allocation technique used in wireless communication to distribute power across multiple channels efficiently.  
 More power is given to better channels (high gain), and less or no power to weaker channels.
 
-### Formula
-The optimal power allocation is given by:
 
-\[
-P_i = \max \left(0, \mu - \frac{1}{|h_i|^2} \right)
-\]
+### Formula
+
+The optimal power allocation is:
+
+Pᵢ = max(0, μ - 1 / |hᵢ|²)
 
 Where:
-- \( P_i \): Power allocated to channel \(i\)  
-- \( h_i \): Channel gain  
-- \( \mu \): Water level (determined by total power constraint)  
-
+- Pᵢ : Power allocated to channel i  
+- hᵢ : Channel gain  
+- μ : Water level (depends on total power constraint)
 
 ### In This Project
 Deep learning learns this optimal allocation instead of solving the water-filling optimization repeatedly.
@@ -87,7 +86,7 @@ The channel represents how signals propagate from transmitter to receiver and in
 2. Interference  
 3. Fading effects  
 
-👉 The channel is dynamic and unpredictable, making optimization challenging.
+-> The channel is dynamic and unpredictable, making optimization challenging.
 
 ---
 
