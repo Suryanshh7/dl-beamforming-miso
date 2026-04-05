@@ -15,7 +15,7 @@ To design a neural network model that learns optimal beamforming weights and pow
 
 ## 3. System Architecture
 
-![MISO System](https://upload.wikimedia.org/wikipedia/commons/2/2b/MIMO_system_model.svg)
+![MISO System](images/miso.png)
 
 *Figure: Multiple transmit antennas sending signals to a single receiver through a wireless channel.*
 
@@ -35,7 +35,7 @@ This setup improves:
 
 ### 4.2 What is Beamforming?
 
-![Beamforming](https://upload.wikimedia.org/wikipedia/commons/3/3b/Beamforming_illustration.png)
+![Beamforming](images/beamforming.webp)
 
 Beamforming is a signal processing technique that directs transmission energy toward a specific receiver instead of spreading it uniformly.
 
@@ -43,13 +43,13 @@ It works by:
 1. Adjusting phase and amplitude of transmitted signals  
 2. Creating constructive interference at the receiver  
 
-👉 Intuition: Focus energy where it is needed instead of wasting it in all directions.
+-> Intuition: Focus energy where it is needed instead of wasting it in all directions.
 
 ---
 
 ### 4.3 What is Power Allocation?
 
-![Power Allocation](https://upload.wikimedia.org/wikipedia/commons/5/5a/Water_filling_algorithm.svg)
+![Power Allocation](images/water_filling.webp)
 
 Power allocation determines how transmission power is distributed across antennas or channels.
 
@@ -62,7 +62,7 @@ Goals:
 
 ### 4.4 What is a Communication Channel?
 
-![Wireless Channel](https://upload.wikimedia.org/wikipedia/commons/8/8c/Multipath_propagation.svg)
+![Wireless Channel](images/channels.webp)
 
 The channel represents how signals propagate from transmitter to receiver and includes:
 1. Noise  
